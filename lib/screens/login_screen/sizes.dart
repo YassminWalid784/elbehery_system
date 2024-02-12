@@ -41,5 +41,20 @@ class TSizes {
    static double inputFieldRadius = 12.0;
    static double spaceBtwInputField = 16.0;
 
+   static double cardRadiusLg = 16.0;
+   static double cardRadiusMd = 12.0;
+   static double cardRadiusSm = 10.0;
+   static double cardRadiusXs = 6.0;
+   static double cardElevation = 2.0;
+
+
+   static double imageCarouselHeight = 200.0;
+
+   static double loadingIndicatorSize = 36.0;
+
+   static double gridViewSpacing = 16.0;
+
+
+
 
 }

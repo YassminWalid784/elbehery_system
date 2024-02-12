@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../registration/registration.dart';
 import '../registration/registration_screen.dart';
 
 class Buttons extends StatelessWidget {
@@ -16,7 +17,7 @@ class Buttons extends StatelessWidget {
             if (text == 'Sign Up') {
               Navigator.pushNamed(context, '/home');
             } else if (text == 'Create a New Account') {
-              Navigator.pushNamed(context, RegistrationScreen.routeName);
+              Navigator.pushNamed(context, Registration.routeName);
             }
           },
           style: ElevatedButton.styleFrom(
@@ -28,7 +29,7 @@ class Buttons extends StatelessWidget {
           ),
           child: Text(
             text,
-            style: TextStyle(fontSize: 18, color: Colors.white),
+            style: const TextStyle(fontSize: 18, color: Colors.white),
           )),
     );
   }

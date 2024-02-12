@@ -1,4 +1,5 @@
 import 'package:elbehery_system/screens/login_screen/login.dart';
+import 'package:elbehery_system/screens/registration/registration.dart';
 import 'package:elbehery_system/screens/registration/registration_screen.dart';
 import 'package:elbehery_system/screens/splash_screen/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -17,8 +18,8 @@ class MyApp extends StatelessWidget {
       title: 'Elbehery App',
       routes: {
         SplashView.routeName: (context) => const SplashView(),
-        Login.routeName: (context) => Login(),
-        RegistrationScreen.routeName: (context) => const RegistrationScreen(),
+        Login.routeName: (context) => const Login(),
+        Registration.routeName: (context) => const Registration(),
         HomeScreen.routeName: (context) => const HomeScreen(),
 
       },

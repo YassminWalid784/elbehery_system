@@ -4,7 +4,7 @@ import 'package:elbehery_system/screens/login_screen/textfield.dart';
 import 'package:flutter/material.dart';
 
 class Login extends StatefulWidget {
-  Login({super.key});
+  const Login({super.key});
   static const String routeName = 'login';
 
   @override
@@ -58,6 +58,7 @@ class _LoginState extends State<Login> {
                         fontSize: 16,
                       ),
                     ),
+
                   ],
                 ),
               ),
@@ -97,11 +98,11 @@ class _LoginState extends State<Login> {
                       height: 10,
                     ),
 
-                    Buttons(text: "Log In"),
+                    const Buttons(text: "Log In"),
                     const SizedBox(
                       height: 10,
                     ),
-                    Buttons(text: "Create a New Account"),
+                    const Buttons(text: "Create a New Account"),
                   ],
                 ),
               ),
