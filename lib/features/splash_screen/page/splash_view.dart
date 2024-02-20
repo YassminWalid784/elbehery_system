@@ -1,7 +1,9 @@
 import 'dart:async';
-import 'package:elbehery_system/screens/login_screen/login.dart';
-//import 'package:elbehery_system/screens/login_screen/login_screen.dart';
+
 import 'package:flutter/material.dart';
+
+import '../../login_screen/page/login_view.dart';
+
 
 
 class SplashView extends StatefulWidget {
@@ -19,7 +21,7 @@ class _SplashViewState extends State<SplashView> {
           () {
         Navigator.pushReplacementNamed(
           context,
-          Login.routeName,
+          LoginView.routeName,
         );
       },
     );
@@ -30,17 +32,11 @@ class _SplashViewState extends State<SplashView> {
     Size mediaQuery = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Colors.transparent,
-      body: Center(
-        child: Column(
-          children: [
-            Image.asset(
-              "assets/images/LogoElbehery.jpg",
-              height: mediaQuery.height,
-              width: mediaQuery.width,
-              fit: BoxFit.cover,
-            ),
-          ],
-        ),
+      body: Image.asset(
+        "assets/images/LogoElbehery.jpg",
+        height: mediaQuery.height,
+        width: mediaQuery.width,
+        fit: BoxFit.cover,
       ),
     );
   }

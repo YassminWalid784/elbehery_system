@@ -18,7 +18,6 @@ class ApplicationThemeManager {
           fontSize: 30,
           fontWeight: FontWeight.bold,
         ),
-
       ),
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
           backgroundColor: primaryColor,
